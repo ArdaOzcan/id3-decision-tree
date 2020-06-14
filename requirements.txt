@@ -1,0 +1,4 @@
+opencv_python==4.1.0.25
+numpy==1.15.0
+Colr==0.9.1
+pandas==0.25.1
