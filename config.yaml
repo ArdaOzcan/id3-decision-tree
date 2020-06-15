@@ -5,7 +5,9 @@
         # Has to be inside the result column
         positiveValue: "Yes",
         # Has to be valid if calculate if false, otherwise unimportant
-        treeFilePath: ".tree"
+        treeFilePath: "play_data.tree",
+
+        imageFilePath: "play_data.png"
     },
     booleans: {
         # Log output to console?
@@ -37,16 +39,16 @@
         # Ideally, you would change these values after you save your tree
         # into a file and set calculate to false.
 
-        imgWidth: 1200,
+        imgWidth: 800,
         imgHeight: 800,
 
         # Height difference between parent and child as pixels
-        yChange: 100,
+        yChange: 150,
 
         # Width difference between parent and child
         # NOTE: This is not absolute difference,
         #       just a multiplier.
-        xChange: 750,
+        xChange: 500,
 
         # float
         fontSize: .75,

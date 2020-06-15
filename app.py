@@ -55,7 +55,7 @@ class App:
         img = utils.visualize(root)
         if self.app_config["booleans"]["saveImage"]:
             cv2.imwrite(
-                f"{os.path.basename(self.app_config['data']['treeFilePath']).split('.')[0]}.jpg", img)
+                f"{os.path.basename(self.app_config['data']['imageFilePath']).split('.')[0]}.jpg", img)
 
         if self.app_config["booleans"]["saveTree"]:
             root.save_to_tree_file(
