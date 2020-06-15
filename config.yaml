@@ -1,0 +1,57 @@
+{
+    data: {
+        # Has to be valid if calculate if true, otherwise unimportant
+        csvFilePath: "data/play_data.csv",
+        # Has to be inside the result column
+        positiveValue: "Yes",
+        # Has to be valid if calculate if false, otherwise unimportant
+        treeFilePath: ".tree"
+    },
+    booleans: {
+        # Log output to console?
+        # Errors are always printed.
+        verbose: true,
+
+        # If calculate is true, root node is read from a .csv and rest is calculated
+        # If calculate if false, whole tree is read from a .tree file to be drawn
+        calculate: true,
+
+        # Save image into a .jpg file?
+        saveImage: false,
+
+        # Show image with an opencv window?
+        showImage: true,
+
+        # Save tree into a .tree file?
+        # Doesn't work if you already read the tree from a .tree file
+        saveTree: false
+    },
+    colors: {
+        # Colors of console output
+        infoColor: "ffaa02",
+        errorColor: "c22929",
+        questionColor: "00aa02"
+    },
+    dimensions: {
+        # Change these values to draw a tree however you want.
+        # Ideally, you would change these values after you save your tree
+        # into a file and set calculate to false.
+
+        imgWidth: 1200,
+        imgHeight: 800,
+
+        # Height difference between parent and child as pixels
+        yChange: 100,
+
+        # Width difference between parent and child
+        # NOTE: This is not absolute difference,
+        #       just a multiplier.
+        xChange: 750,
+
+        # float
+        fontSize: .75,
+
+        # int
+        thickness: 2
+    }
+}
