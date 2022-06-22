@@ -1,5 +1,5 @@
 pandas==0.25.1
 Colr==0.9.1
-numpy==1.15.0
+numpy==1.22.0
 opencv_python==4.1.0.25
 PyYAML==5.3.1
